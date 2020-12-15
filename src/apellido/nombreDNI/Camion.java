@@ -8,7 +8,7 @@ import java.util.List;
 public class Camion  {
 	
 	// completar la clase Empresa
-
+	
 	// si es necesraio agregue los metodos atributos y clases que crea que sea
 	// conveniente
 	
@@ -17,20 +17,19 @@ public class Camion  {
 	private List <Producto> listaProductos;
 	
 	
+	
+	
+	
+	
 	public Camion (String patente) {
 	
 	}
 	
 	
 	public Boolean cargarProducto(Producto producto) {
-		/*
-		 * carga el producto en la lista de producto 
-		 *   
-		 * 
-		 */
+			
 		
-		
-		return null;
+		return listaProductos.add(producto);
 	
 	}
 	
