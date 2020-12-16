@@ -5,6 +5,7 @@ import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 
+
 public class Camion  {
 	
 	// completar la clase Empresa
@@ -14,15 +15,13 @@ public class Camion  {
 	
 	
 	private String patente;
-	private List <Producto> listaProductos;
-	
-	
-	
-	
-	
+	private List <Producto> listaProductos;	
 	
 	public Camion (String patente) {
-	
+		
+		this.patente= patente;
+		this.listaProductos = new ArrayList<Producto>();
+		
 	}
 	
 	
@@ -35,6 +34,14 @@ public class Camion  {
 	
 	
 	public Producto descargarProducto(Integer idProducto) {
+		
+		for (Producto producto: this.listaProductos) 
+		{
+			if(idProducto.equals(producto.getId()))				
+			listaProductos.remove(producto);
+			return producto;
+		}
+		
 	
 		/*
 		 * buesca y un producto por su id y devuelve el producto encontrado
@@ -43,6 +50,12 @@ public class Camion  {
 		 */
 		
 	return null;
+	}
+	
+	public Integer cantidadDeProductos() {
+		return listaProductos.size();
+		
+		
 	}
 	
 

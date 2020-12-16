@@ -19,13 +19,12 @@ public class TestEmpresa {
 		Empresa empresa1 = new Empresa ("Scania");
 		Camion camion1 = new Camion("klj948");
 		Camion camion2 = new Camion("uhy471");
-		
+		 
 		empresa1.agregarCamion(camion1);
 		empresa1.agregarCamion(camion2);
 		Integer ve = 2;
 		
 		assertEquals(ve, empresa1.cantidadDeCamiones());		
-	
 	}
 	
 	
